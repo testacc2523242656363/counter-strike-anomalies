@@ -26,7 +26,7 @@ header {
 }
 
 header h1 {
-    font-size: 1.8em; /* Smaller header size */
+    font-size: 1.8em;
     color: #e63946;
 }
 
@@ -44,7 +44,7 @@ nav ul li {
 nav ul li a {
     color: #f0f0f0;
     text-decoration: none;
-    font-size: 1em; /* Smaller text for links */
+    font-size: 1em;
 }
 
 nav ul li a:hover {
@@ -58,12 +58,12 @@ section {
     background-color: #333;
     border-radius: 8px;
     width: 80%;
-    max-width: 800px; /* Reduced max-width */
+    max-width: 800px;
 }
 
 /* Heading and text styling */
 h2 {
-    font-size: 1.5em; /* Smaller heading size */
+    font-size: 1.5em;
     color: #e63946;
 }
 
@@ -82,7 +82,7 @@ ul li strong {
 /* Video styling */
 iframe {
     width: 100%;
-    height: 240px; /* Smaller video size */
+    height: 240px;
     border-radius: 8px;
     margin-top: 10px;
 }
@@ -94,7 +94,7 @@ footer {
     color: #888;
     margin-top: 20px;
     width: 100%;
-    font-size: 0.8em; /* Smaller font size */
+    font-size: 0.8em;
 }
 
 /* Container for side panel and content on the timeline page */
@@ -102,20 +102,22 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    max-width: 1000px; /* Reduced max-width */
+    max-width: 1000px;
     margin-top: 30px;
+    gap: 20px; /* Add some space between the side panel and main content */
 }
 
 /* Side panel styling */
 #side-panel {
     background-color: #444;
-    padding: 15px;
-    width: 30%;
+    padding: 10px;
+    width: 30%; /* Adjust width */
     border-radius: 8px;
+    height: fit-content; /* Allow side panel to grow with content */
 }
 
 #side-panel h3 {
-    font-size: 1.4em; /* Smaller font size for heading */
+    font-size: 1.4em;
     color: #e63946;
 }
 
@@ -131,6 +133,23 @@ footer {
 #main-content {
     background-color: #333;
     padding: 15px;
-    width: 65%; /* Reduced width for main content */
+    width: 65%; /* Adjust width for main content */
     border-radius: 8px;
+    height: fit-content; /* Allow main content to grow with content */
 }
+
+/* Add some minor styling to make the timeline clearer */
+#side-panel ul li strong {
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+#side-panel ul li {
+    font-size: 0.9em;
+}
+
+#main-content p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
